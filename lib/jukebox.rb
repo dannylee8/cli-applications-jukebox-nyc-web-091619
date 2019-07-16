@@ -33,7 +33,7 @@ end
 def play(songs_array)
   puts "Please enter a song name or number:"
   choice = gets.chomp
-binding.pry
+
   if choice.to_i > 0   
     if choice.to_i > songs_array.length
       puts "Invalid input, please try again"
