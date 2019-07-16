@@ -77,7 +77,7 @@ describe "CLI Jukebox" do
       allow(self).to receive(:gets).and_return("help", "exit")
       help_output = capture_stdout { run(songs) }
       expect(help_output).to include("help").and include("list").and include("play").and include("exit").and include("Please enter a command:").and include("Goodbye")
-
+binding.pry
     end
 
     it "responds to 'list'" do
