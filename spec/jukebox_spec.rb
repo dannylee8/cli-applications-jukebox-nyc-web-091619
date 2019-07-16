@@ -1,4 +1,6 @@
 require_relative 'spec_helper'
+require 'pry'
+
 
 songs = [
   "Phoenix - 1901",
