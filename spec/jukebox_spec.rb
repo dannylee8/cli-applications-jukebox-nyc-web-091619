@@ -1,6 +1,4 @@
 require_relative 'spec_helper'
-require 'pry'
-
 
 songs = [
   "Phoenix - 1901",
@@ -20,7 +18,6 @@ describe "CLI Jukebox" do
     describe "#help" do
       it "lists out the possible commands" do
         expect { help }.to output(/^(?=.*help)(?=.*list)(?=.*play)(?=.*exit).+/m).to_stdout
-        binding.pry
       end
     end
 
